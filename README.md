@@ -113,78 +113,39 @@ Application runs on: http://localhost:8080
 Dependencies
 =============
 
-<!-- Spring Boot Starters -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-</dependency>
+✅ Core Starters
+====================
+Name	                                         Description
+spring-boot-starter-web	                      For building REST APIs and web applications
+spring-boot-starter-security	              Adds Spring Security for authentication & authorization
+spring-boot-starter-data-jpa	              JPA & Hibernate support for database operations
+spring-boot-starter-mail	                  To send emails using SMTP
 
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-security</artifactId>
-</dependency>
 
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-data-jpa</artifactId>
-</dependency>
+🔐 JWT Dependencies
+======================
 
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-mail</artifactId>
-</dependency>
+Name	                                        Description
+jjwt-api                                     	JWT core API
+jjwt-impl	                                    JWT implementation
+jjwt-jackson                                 	JWT support using Jackson for JSON
 
-<!-- JWT (JSON Web Token) -->
-<dependency>
-    <groupId>io.jsonwebtoken</groupId>
-    <artifactId>jjwt-api</artifactId>
-    <version>0.11.5</version>
-</dependency>
-<dependency>
-    <groupId>io.jsonwebtoken</groupId>
-    <artifactId>jjwt-impl</artifactId>
-    <version>0.11.5</version>
-    <scope>runtime</scope>
-</dependency>
-<dependency>
-    <groupId>io.jsonwebtoken</groupId>
-    <artifactId>jjwt-jackson</artifactId> <!-- Use jjwt-gson if preferred -->
-    <version>0.11.5</version>
-    <scope>runtime</scope>
-</dependency>
 
-<!-- Lombok for cleaner code with annotations -->
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <optional>true</optional>
-</dependency>
+⚙️ Utilities
+================
 
-<!-- MySQL Driver -->
-<dependency>
-    <groupId>com.mysql</groupId>
-    <artifactId>mysql-connector-j</artifactId>
-    <scope>runtime</scope>
-</dependency>
+Name	                         Description
+lombok                        Boilerplate code reduction (getters/setters)
+spring-boot-devtools	      Hot reload during development
 
-<!-- Spring Boot DevTools (for development hot reload) -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-devtools</artifactId>
-    <scope>runtime</scope>
-    <optional>true</optional>
-</dependency>
 
-<!-- Spring Boot Testing -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-test</artifactId>
-    <scope>test</scope>
-</dependency>
+🛢️ Database
+=============
+Name	                             Description
+mysql-connector-j	           MySQL JDBC driver for DB access
 
-<!-- Spring Security Testing -->
-<dependency>
-    <groupId>org.springframework.security</groupId>
-    <artifactId>spring-security-test</artifactId>
-    <scope>test</scope>
-</dependency>
+🧪 Testing
+===============
+Name	                                   Description
+spring-boot-starter-test	            Unit & integration test support
+spring-security-test	                Test Spring Security configurations
